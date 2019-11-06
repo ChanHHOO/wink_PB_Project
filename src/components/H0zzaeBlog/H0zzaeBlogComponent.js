@@ -1,8 +1,8 @@
 import React from 'react';
-import Categori from "./Categori";
-import Navbar from "../commons/NavbarComponent/Navbar";
-import PostItem from "./Post/PostItem";
 import Title from "./Title";
+import Navbar from "../commons/NavbarComponent/Navbar";
+import Categori from "./CategoriUi";
+import PostItem from "./Post/PostItemBlogMain";
 
 export default function H0zzaeBlogComponent(){
     return(

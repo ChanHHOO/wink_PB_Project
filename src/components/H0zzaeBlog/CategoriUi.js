@@ -23,14 +23,16 @@ export default function MenuExampleVerticalSecondary() {
                     class='active item'
                     name='전체보기'
                     active={activeItem === 'home'}
-                    onClick={handleItemClick}>
+                    onClick={handleItemClick}
+                    href = "http://localhost:3000/H0zzae">
                     <b>전체보기</b>
                 </a>
                 <a
                     class='item'
                     name='react'
-                    active={activeItem === 'messages'}
-                    onClick={handleItemClick}>
+                    active={activeItem === 'react'}
+                    onClick={handleItemClick}
+                    href = "http://localhost:3000/H0zzae/CE">
                     react
                 </a>
                 <a
