@@ -9,6 +9,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={components.Main} />
             <Route exact path="/H0zzae" component={components.H0zzae} />
+            <Route exact path="/H0zzae/Header" component={components.H0zzaeHeader} />
           </Switch>
         </BrowserRouter>
       </>
