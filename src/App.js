@@ -11,6 +11,7 @@ function App() {
             <Route exact path="/H0zzae" component={components.H0zzae} />
             <Route exact path="/H0zzae/PE" component={components.PostingExample} />
             <Route exact path="/H0zzae/CE" component={components.CategoriExample} />
+            <Route exact path="/Daun" component={components.Daun} />
           </Switch>
         </BrowserRouter>
       </>
