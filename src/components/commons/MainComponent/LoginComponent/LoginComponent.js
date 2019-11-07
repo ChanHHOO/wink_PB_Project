@@ -20,6 +20,17 @@ export default function LoginComponent({history}){
             setError(true);
         }
     }, [email, password]);
+    const handleLogout = useCallback(async () => {
+        try {
+            await firebase.auth().signOut();
+
+
+        } catch (error) {
+
+            console.log(password)
+            setError(true);
+        }
+    }, []);
     useEffect(() => {
         firebase.auth().onAuthStateChanged(user => {
             if (user !== null) {
@@ -28,6 +39,15 @@ export default function LoginComponent({history}){
                     displayName: user.displayName,
                     photoUrl: user.photoURL,
                 });
+                var user = firebase.auth().currentUser;
+                if (user) {
+                    var name = user.name;
+
+                } else {
+                    // No user is signed in.
+                }
+
+
 
                 firebase
                     .database()
@@ -43,7 +63,10 @@ export default function LoginComponent({history}){
                 loggedIn ? (<div style={{position: "absolute", top: "20%", minWidth: "100%"}}>
                     <Grid textAlign="center" verticalAlign="middle">
                         <Grid.Column style={{maxWidth: 450}}>
-                            <h1>nope</h1>
+
+                            <Button primary={true} fluid size="large" onClick={handleLogout}>
+                                로그아웃
+                            </Button>
                         </Grid.Column>
 
                     </Grid>

@@ -98,7 +98,9 @@ export default function MainComponent({history}){
         }
 
     }
-    const redirectionItem = ['LOGIN', 'JOIN', 'EXPLORE'];
+
+        const redirectionItem = ['LOGIN', 'JOIN', 'EXPLORE'];
+
     return (
         <div className="background" style={{position:"absolute", width:"100%", height:"100%",left:"0px", top:"0px", overflow:"hidden" }}>
             <div style={{position:"absolute",backgroundColor:"rgb(0,0,0,0.5)", zIndex:"2", width:"100%", height:"100%"}}></div>
