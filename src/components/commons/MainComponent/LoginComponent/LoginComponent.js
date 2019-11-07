@@ -2,6 +2,9 @@ import React,{useCallback, useState, useEffect} from 'react';
 import {Button, Divider, Form, Grid, Icon, Message} from "semantic-ui-react";
 import firebaseSdk from 'firebase';
 import firebase from '../../../../firebase';
+
+import profile from "../../../../images/1_mm5cDQAWDh7J_ef_NnxoyA.png";
+
 export default function LoginComponent({history}){
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -31,6 +34,7 @@ export default function LoginComponent({history}){
             setError(true);
         }
     }, []);
+
     useEffect(() => {
         firebase.auth().onAuthStateChanged(user => {
             if (user !== null) {
@@ -39,13 +43,7 @@ export default function LoginComponent({history}){
                     displayName: user.displayName,
                     photoUrl: user.photoURL,
                 });
-                var user = firebase.auth().currentUser;
-                if (user) {
-                    var name = user.name;
 
-                } else {
-                    // No user is signed in.
-                }
 
 
 
@@ -57,6 +55,7 @@ export default function LoginComponent({history}){
         });
     }, []);
 
+
     return(
         <>
             {
@@ -64,6 +63,9 @@ export default function LoginComponent({history}){
                     <Grid textAlign="center" verticalAlign="middle">
                         <Grid.Column style={{maxWidth: 450}}>
 
+                                <img src={profile} style={{position:"relative", height:"100%", minWidth:"100%"}}/>
+
+                            <h2>찬호</h2>
                             <Button primary={true} fluid size="large" onClick={handleLogout}>
                                 로그아웃
                             </Button>
