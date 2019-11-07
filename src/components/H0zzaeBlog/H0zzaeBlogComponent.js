@@ -1,22 +1,13 @@
 import React from 'react';
-import styled from "styled-components";
-import Categori from "./Categori";
+import Title from "./Title";
 import Navbar from "../commons/NavbarComponent/Navbar";
-import PostItem from "./PostItem";
-
-const Title = styled.div`
-    font-size:4em;
-    display:block;
-    text-align:center;
-    padding:0px;
-    margin:0px;
-    line-height:3em;
-`
+import Categori from "./CategoriUi";
+import PostItem from "./Post/PostItemBlogMain";
 
 export default function H0zzaeBlogComponent(){
     return(
         <div>
-                <Title>H0zzaeBlog</Title>
+                <Title/>
                 <Navbar/>
                 <Categori></Categori>
                 <PostItem/>

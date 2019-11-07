@@ -118,10 +118,10 @@ export default function MainComponent({history}){
                                         const objName = 'x'+(Number(index)+1);
                                         return(
                                             <Bottons className={title}
-                                                         onMouseOver={()=>handleMouseOver(true, title)}
-                                                         onMouseOut={()=>handleMouseOver(false, title)}
-                                                         onClick={()=>(handleClickNav(title))}
-                                                         style={{transform:`translateX(${style[objName]}px)`,transition: "height 1s", opacity:style.opacity, height:"33.33%"}}>
+                                                     onMouseOver={()=>handleMouseOver(true, title)}
+                                                     onMouseOut={()=>handleMouseOver(false, title)}
+                                                     onClick={()=>(handleClickNav(title))}
+                                                     style={{transform:`translateX(${style[objName]}px)`,transition: "height 1s", opacity:style.opacity, height:"33.33%"}}>
                                                 <h1 className={title + "title"} style={{position:"relative",transition:"all 1s",top:"40%", left:"17%"}}>{title}</h1>
                                             </Bottons>
                                         )
@@ -132,7 +132,7 @@ export default function MainComponent({history}){
                                         <LoginComponent />
                                     </>
 
-                                        :
+                                    :
                                     <>
                                     </>
                                 }
