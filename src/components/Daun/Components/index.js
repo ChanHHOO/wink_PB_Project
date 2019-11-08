@@ -1,0 +1,5 @@
+export {default} from './Home'
+export {default as Board} from './Board'
+export {default as MyBoard} from './MyBoard'
+export {default as MyPage} from './MyPage'
+export {default as About} from './About'

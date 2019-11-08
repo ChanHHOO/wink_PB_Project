@@ -6,15 +6,15 @@ class Header extends Component {
 		return (
 		    <Container>
 				<Element>
-					<ShortCut><em> LIM DAUN </em> </ShortCut>
+					<ShortCut><font color = "white"> <em> LIM DAUN </em></font> </ShortCut>
 					<Logo>
 						<img
 							width="100%"
 							height="100%"
 							src="https://postfiles.pstatic.net/MjAxOTExMDZfMjc2/MDAxNTczMDM1MzM0NjA2.j8t0pFiQ9Oa1t67XkoYn9AtYwI4geUZ7oTPs3iiQCTMg.pV-JCnUm1n4xYMwMlEb5jLOjjs9CCGuGlHaDvByH7esg.JPEG.ldu0131/KakaoTalk_20191106_190537008_(2).jpg?type=w580"
-							ALT="logo"/>
+							alt="logo"/>
 					</Logo>
-					<Search><br/><font size="7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>POWER WINK</em></font></Search>
+					<Search><br/><font size="7" color="white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>POWER WINK</em></font></Search>
 				</Element>
 			</Container>
 		);
@@ -40,7 +40,7 @@ const ShortCut = styled.div`
 	width: 100%;
 	height: 20px;
 	text-align: right;
-	background-color:white;
+	background-color:BLACK;
 `
 
 const Logo = styled.div`
@@ -52,6 +52,6 @@ const Logo = styled.div`
 const Search = styled.div`
 	order: 3;
     width: 880px;
-	background-color:white;
+	background-color:BLACK;
 	text-align: left;
 `

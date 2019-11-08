@@ -19,7 +19,7 @@ getWeather = () => {
 	.then(json => {
 		this.setState({
 			temperature: Math.floor(json.main.temp - 273.15),
-			name: json.weather[0].name,
+			name: json.weather[0].main,
 			icon: json.weather[0].icon,
 		});
 	});
@@ -30,17 +30,25 @@ componentDidMount() {
 }
 
 render() {
-	const { temperature, name, icon } = this.state;
-	const img_url = 'http://openweathermap.org/img/w/${icon}.png';
+    const { temperature, name, icon } = this.state;
+    const img_url= "https://data.ac-illust.com/data/thumbnails/ea/ea31856d1e65d3763e11530541288ad4_t.jpeg";
 	
-	return (
-		<>	 
+    return (
+		<div style={{textAlign:"center", minWidth:"100%", minHeight:"100%"}}>	 
+            <h1/>
+            <h1/>
 			<h1> <em>Today Weather</em> </h1>
-			<img alt="weater_icon" src={img_url}/>
-			<h3> temperature : {temperature} ¢ªC</h3>
-			<h3> weather : {name}</h3>
-		</>
+            <h1/>
+            <h1/>
+			<img alt="weather_icon" src={img_url}/>
+            <h1/>
+            <h1/>
+			<h1> <em>temperature : {temperature} Celsius Degree</em></h1>
+            <h1/>
+            <h1/>
+			<h1> <em>weather : {name}</em></h1>
+		</div>
 	);
-}}
+            }}
 
 export default Home;

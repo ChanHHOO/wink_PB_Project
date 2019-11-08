@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Hero from './Hero';
-import Navigation from './Navigation';
-import Home from './Home';
+import Hero from './Layout/Hero';
+import Navigation from './Layout/Navigation';
+import Router from './Routes/Router';
 
 class Daun extends Component {
 	render() {
@@ -10,7 +10,7 @@ class Daun extends Component {
 			<Layout>
 				<Hero />
 				<Navigation />
-				<Home/>
+                    <Router />
 			</Layout>
 		);
 	}
